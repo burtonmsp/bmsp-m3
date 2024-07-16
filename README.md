@@ -1,5 +1,5 @@
 # bmsp-m3
-BurtonMSP M3 Colors for WP
+BurtonMSP M3 Colors - WordPress Plugin
 
 We wanted a simple way to generate Material You colours for websites, but found that the official plugin didn't always play nicely with non-Gutenberg themes/builders.
 
