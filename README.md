@@ -5,6 +5,8 @@ We wanted a simple way to generate Material You colours for websites, but found 
 
 This is a simple plugin that uses material components to generate a colour scheme from a primary colour and shows the palette in the plugin settings page.
 
+The primary colour, button radius and generated css are saved in the wp_options table.
+
 In addition, for ease of coding, we implemented a click-to-copy of the color swatch in rgb format, and of the variable name so they can be quickly copied and pasted. On top of that, we've added a checkbox to wrap the variable name with var().
 
 In M3 design the button corners are rounded, but we've added a button radius also.
