@@ -1,0 +1,145 @@
+/* Base styles */
+.color-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+    gap: 12px; /* Adjust as needed */
+    padding: 12px;
+    border-radius: 16px;
+    border: 1px solid #ccc;
+}
+
+/* Light mode */
+.color-container.light-mode {
+    background-color: #FBFCFF;
+    color: #191C1E; /* Text color in light mode */
+}
+
+/* Dark mode */
+.color-container.dark-mode {
+    background-color: #191C1E;
+    color: #E1E2E5; /* Text color in dark mode */
+}
+
+.color-mode-header {
+    width: 100%;
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.color-variable {
+    position: relative; /* Ensure tooltip is positioned relative to this element */
+    display: flex;
+    flex-direction: row; /* Arrange children side by side */
+    align-items: center;
+    justify-content: flex-start; /* Align items to the left */
+    text-align: left; /* Left-align text */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.color-swatch {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px; /* Add margin to the right for spacing */
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Tooltip styles */
+.color-tooltip {
+    position: absolute;
+    bottom: 100%; /* Position above the color variable */
+    left: 10%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    z-index: 1;
+    pointer-events: none; /* Prevent mouse events on the tooltip */
+}
+
+.admin-toast {
+    position: fixed;
+    top: 20px; /* Adjust top position as needed */
+    right: 20px; /* Position on the right side */
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    display: none; /* Hide initially */
+}
+
+/* Responsive styles */
+
+@media (max-width: 1280px) {
+    .color-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on tablets */
+    }
+}
+
+@media (max-width: 1024px) {
+    .color-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 column on mobile landscape */
+    }
+}
+
+@media (max-width: 480px) {
+    .color-container {
+        grid-template-columns: 1fr; /* 1 column on mobile */
+    }
+}
+
+#generated-theme-colors {
+    visibility: hidden!important;
+}
+
+.list {
+    padding-left: 16px;
+}
+
+.dot {
+  height:10px;
+  width: 10px;
+  background-color: var(--md-sys-color-primary);
+  border-radius: 50%;
+  display: inline-block;
+}
+.litem {
+    padding-left: 8px;
+}
+
+#button-corners-slider {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-slider {
+    height: 40px; 
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.button-preview {
+    margin-left: 24px;
+    height: 40px; 
+    line-height: 40px;
+    padding: 0 24px;
+    background-color: var(--md-sys-color-primary); 
+    text-align: center;
+    vertical-align: middle;
+}
+.btn-text {
+    color: var(--md-sys-color-on-primary);
+}
+#demo {
+    color: var(--md-sys-color-on-primary);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
